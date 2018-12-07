@@ -89,7 +89,7 @@ export default class PaymentTable extends React.Component {
                     <label>ทั้งหมด 30 รายการ|รวมเป็นเงิน 20,000,00</label>
                     <label className="position-right" >ดาวโหลดไฟล์</label>
                 </div>
-                <div className="margin-top-10px">
+                <div className="margin-top-10px tableheader">
                     <DataTable value={this.state.cars}   >
                         <Column field="order" header="ลำดับ" sortable={true}  />
                         <Column field="reference" header="เลขที่อ้างอิง"  />
@@ -97,41 +97,6 @@ export default class PaymentTable extends React.Component {
                         <Column field="amount" header="ยอดจ่ายสุทธิ" sortable={true} />
                         <Column body={this.actionTemplate} style={{ textAlign: 'center', width: '8em' }} ></Column>
                     </DataTable>
-                </div>
-
-                <div className="margin-top-10px">
-
-                    <Table>
-                        <thead>
-                            <tr>
-                                <th>ลำดับ</th>
-                                <th>เลขที่อ้างอิง</th>
-                                <th>วันที่จ่าย</th>
-                                <th>ยอดจ่ายสุทธิ</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </Table>
                 </div>
 
             </div>

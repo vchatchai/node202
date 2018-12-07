@@ -1,0 +1,112 @@
+.margin-right-50px {
+    margin-right: 50px
+}
+.margin-top-50px {
+    margin-top: 50px
+}
+.margin-top-10px {
+    margin-top: 10px
+}
+.width100px { 
+    width: 100px
+}
+.position-right {
+    /* position: absolute;
+    right: 0px; */
+    float: right;
+}
+
+.padding-20px {
+    padding: 20px;
+}
+
+.gray { 
+    background-color:#d4e2e2;
+}
+.white {
+    background-color:#ffffff;
+
+}
+
+.payment-detail {
+
+}
+
+
+ 
+ 
+
+.payment-detail div div table thead    {
+    background: linear-gradient(90.47deg, #02A8B5 0%, #43C07A 43.5%, #81D742 100%, #0094FB 100%, #008EFB 100%, #81D742 100%) !important;
+
+
+}
+
+
+.payment-detail div div table tr th {
+    background-color: unset !important;
+    color: white !important;
+    /* border-color:unset !important; */
+    /* border-width: 0px !important; */
+}
+
+.payment-detail div div table tr td {
+    /* border: 0px none none !important; */
+    /* border-color:unset !important; */
+    /* border-width: 0px !important; */
+    text-align: center;
+    /* background-color: green !important; */
+}
+
+.fromtocalendar {}
+
+.bg {
+	height: 95px;
+	width: 100%;
+	border: 1px solid #E6EAEE;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}
+
+
+.payment-detail-background-color { 
+    background-color: #F2F4FA;
+}
+
+
+.payment-detail-padding-top-16px { 
+    padding-top: 16px;
+    
+}
+.payment-detail-padding-top-10px { 
+    padding-top: 10px;
+    
+}
+.payment-detail-text-align-center { 
+    text-align: center;
+}
+
+.payment-detail-padding-left-right-20px {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.payment-detail-float-left { 
+    float: left;
+   
+}
+
+.payment-detail-width-320px { 
+    width: 320px;
+}
+
+.box-detail {
+	height: 24px;
+	width: 320px;
+	color: #333333;
+	font-family: "Helvetica Neue";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: -0.48px;
+	line-height: 25px;
+	text-align: center;
+}

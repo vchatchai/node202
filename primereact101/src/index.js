@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import PaymentProduct from './PaymentProduct'
-import Header from './Header'
 import * as serviceWorker from './serviceWorker';
 
 import 'primereact/resources/themes/nova-light/theme.css';

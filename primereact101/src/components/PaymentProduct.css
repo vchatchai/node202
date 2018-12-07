@@ -1,0 +1,75 @@
+.margin-right-50px {
+    margin-right: 50px
+}
+.margin-top-50px {
+    margin-top: 50px
+}
+.margin-top-10px {
+    margin-top: 10px
+}
+.width100px { 
+    width: 100px
+}
+.position-right {
+    /* position: absolute;
+    right: 0px; */
+    float: right;
+}
+
+.padding-20px {
+    padding: 20px;
+}
+
+.gray { 
+    background-color:#d4e2e2;
+}
+.white {
+    background-color:#ffffff;
+
+}
+
+.tableheader {
+
+}
+
+
+
+
+
+.tableheader div div table thead    {
+    background: linear-gradient(90.47deg, #02A8B5 0%, #43C07A 43.5%, #81D742 100%, #0094FB 100%, #008EFB 100%, #81D742 100%) !important;
+
+
+}
+
+
+.tableheader div div table tr th {
+    background-color: unset !important;
+    color: white !important;
+    border-color:unset !important;
+    border-width: 0px !important;
+}
+
+.tableheader div div table tr td {
+    border: 0px none none !important;
+    border-color:unset !important;
+    border-width: 0px !important;
+    text-align: center;
+    /* background-color: green !important; */
+}
+
+.fromtocalendar {}
+
+
+.fromtocalendar input {
+    background-color: white !important;
+    color:black !important;
+    /* border: 0px !important; */
+
+}
+.fromtocalendar button {
+    background-color: white !important;
+    color:black !important;
+    border: 1px solid #a6a6a6 !important; 
+
+}

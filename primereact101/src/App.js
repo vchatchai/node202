@@ -6,11 +6,11 @@ import './App.css';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import Header from './Header' 
+import Header from './components/Header' 
 import {Button} from 'primereact/button';
-import PaymentProduct from './PaymentProduct';
-
-
+import PaymentProduct from './components/PaymentProduct';
+import PaymentDetail from './components/PaymentDetail';
+import PaymentCommission from './components/PaymentCommission'
 
 class App extends Component {
 
@@ -26,10 +26,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="payment-detail-background-color">
 
         <Header></Header>
-        <PaymentProduct ></PaymentProduct> 
+        {/* <PaymentCommission></PaymentCommission> */}
+        <PaymentDetail></PaymentDetail>
+        {/* <PaymentProduct ></PaymentProduct>  */}
       </div>
  
     );
