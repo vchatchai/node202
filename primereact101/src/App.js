@@ -29,8 +29,8 @@ class App extends Component {
       <div className="payment-detail-background-color">
 
         <Header></Header>
-        {/* <PaymentCommission></PaymentCommission> */}
-        <PaymentDetail></PaymentDetail>
+        <PaymentCommission></PaymentCommission>
+        {/* <PaymentDetail></PaymentDetail> */}
         {/* <PaymentProduct ></PaymentProduct>  */}
       </div>
  
