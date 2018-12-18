@@ -11,7 +11,6 @@ import { Button } from 'primereact/button';
 import PaymentProduct from './components/PaymentProduct';
 import PaymentDetail from './components/PaymentDetail';
 import PaymentCommission from './components/PaymentCommission'
-
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 class App extends Component {
 
@@ -27,27 +26,26 @@ class App extends Component {
 
   render() {
     return (
+        <Router>
+          <div className="payment-detail-background-color">
 
-      <Router>
-        <div className="payment-detail-background-color">
-
-          <Header></Header>
-          {/* <PaymentCommission></PaymentCommission> */}
-          {/* <PaymentDetail></PaymentDetail> */}
-          {/* <PaymentProduct ></PaymentProduct>  */}
+            <Header></Header>
+            {/* <PaymentCommission></PaymentCommission> */}
+            {/* <PaymentDetail></PaymentDetail> */}
+            {/* <PaymentProduct ></PaymentProduct>  */}
 
 
-          <Route exact path="/" component={PaymentProduct} />
-          <Route path="/commission" component={PaymentCommission} />
-          <Route exact path="/paymentdetail/:id" render={({ match }) => (
-                <PaymentDetail data={match} />
+            <Route exact path="/" component={PaymentProduct} />
+            <Route path="/commission" component={PaymentCommission} />
+            <Route exact path="/paymentdetail/:id" render={({ match }) => (
+              <PaymentDetail data={match} />
             )} />
-          
-          <Route exact path="/commissiondetail/:id" render={({ match }) => (
-                <PaymentDetail data={match} />
+
+            <Route exact path="/commissiondetail/:id" render={({ match }) => (
+              <PaymentDetail data={match} />
             )} />
-        </div>
-      </Router>
+          </div>
+        </Router>
 
     );
   }
