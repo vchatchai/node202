@@ -23,6 +23,10 @@ export default class PaymentDetail extends React.Component {
         console.log(this.state.date);
     }
 
+    componentWillMount(){
+        console.log(this.data)
+    }
+
     componentDidMount() {
 
     }
@@ -134,9 +138,5 @@ export default class PaymentDetail extends React.Component {
             </div>
             
         )
-    }
-    actionTemplate(rowData, column) {
-        console.log(rowData)
-        return (<div> <a value={rowData.order}>ดูรายละเอียด</a></div>);
-    }
+    } 
 }

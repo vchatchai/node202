@@ -6,6 +6,7 @@ import './PaymentProduct.css'
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default class PaymentCommission extends React.Component {
     constructor() {
         super();
@@ -103,13 +104,14 @@ export default class PaymentCommission extends React.Component {
 
                     <div   >
 
-                        <Calendar dateFormat="dd/mm/yy"
+                        <Calendar dateFormat="mm/yy"
                             value={this.state.date}
                             onChange={
                                 (e) => {
                                     this.setState({ date: e.value })
                                 }
                             }
+                            
                             showButtonBar={true}
                             locale={th}
                             showIcon={true}
@@ -134,7 +136,7 @@ export default class PaymentCommission extends React.Component {
                             <Column field="reference" header="เลขที่อ้างอิง" textAlign="center" style={{ width: '20%' }} />
                             <Column field="paymentdate" header="วันที่โอน" sortable={true} style={{ width: '20%' }} />
                             <Column field="commission" header="ค่าคอมมิชชั่น" sortable={true} style={{ width: '20%' }} />
-                            <Column field="commissionExcludeVat" header="ค่าคอมมิชชั่นไม่รวมภาษี" sortable={true} style={{ width: '20%' }} />
+                            <Column field="commissionExcludeVat" header="ค่าคอมมิชชั่น<br\>ไม่รวมภาษี" sortable={true} style={{ width: '20%' }} />
                             <Column field="vat" header="ภาษีมูลค่าเพิ่ม 7%" sortable={true} style={{ width: '20%' }} />
                             <Column field="withHoldingTax" header="หักภาษี ณ ที่จ่าย 3%" sortable={true} style={{ width: '20%' }} />
                             <Column field="amount" header="ยอดจ่ายสุทธิ" sortable={true} style={{ width: '20%' }} />
@@ -151,8 +153,15 @@ export default class PaymentCommission extends React.Component {
 
 
     }
-    actionTemplate(rowData, column) {
-        console.log(rowData)
-        return (<div> <a value={rowData.order}>ดูรายละเอียด</a></div>);
+    actionTemplate(rowData, column) { 
+
+
+        let url = `/commissiondetail/${rowData.order}`
+        // return (<div> <a value={rowData.order}>ดูรายละเอียด</a></div>);
+        return ( <Link to={url}  >ดูรายละเอียด</Link>);
+
+
+
+       
     }
 }

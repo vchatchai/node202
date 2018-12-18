@@ -12,11 +12,15 @@ import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
 import { InputText } from "primereact/inputtext";
 
+import PaymentProduct from  './PaymentProduct';
+import PaymentCommission from './PaymentCommission'
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default class Header extends React.Component {
     constructor() {
         super();
 
-         
+
     }
 
     render2() {
@@ -63,25 +67,31 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div className="header-background-color ">
-                <div class="navbar">
-                    <img src={logo} className="gl-logo" alt="logo" />
-                    <a href="#home" className="active" >รายการจ่ายเงินค่าสินค้า</a>
-                    <a href="#news">ค่าส่งเสริมการขาย</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">ฉัตรชัย วิชัย
+
+                <div className="header-background-color ">
+                    <div class="navbar">
+                        <img src={logo} className="gl-logo" alt="logo" />
+                        {/* <a href="#home" className="active" >รายการจ่ายเงินค่าสินค้า</a> */}
+                        <Link to="/" className="active" >รายการจ่ายเงินค่าสินค้า</Link>
+                        {/* <a href="#news">ค่าส่งเสริมการขาย</a> */}
+                        <Link to="/commission" className="" >ค่าส่งเสริมการขาย</Link>
+                        <div class="dropdown">
+                            <button class="dropbtn">ฉัตรชัย วิชัย
                     <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content"> 
-                            <a href="#">ออกจากระบบ</a>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">ออกจากระบบ</a>
+                            </div>
                         </div>
                     </div>
+                    <hr className="padding-0 margin-0 " />
+
                 </div>
-                <hr className="padding-0 margin-0 " />
-            </div>
+
         )
     }
 
+ 
     render1() {
 
 
